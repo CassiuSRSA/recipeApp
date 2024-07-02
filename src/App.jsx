@@ -15,7 +15,7 @@ const Logo = styled(Link)`
 `;
 
 const Nav = styled.nav`
-  padding: 4rem 0rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -32,8 +32,9 @@ function App() {
           <GiBunnySlippers />
           <Logo to={"/"}>BunBun Recipe App</Logo>
         </Nav>
-        <Search />
+
         <Category />
+        <Search />
         <Pages />
       </BrowserRouter>
     </>

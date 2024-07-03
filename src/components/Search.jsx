@@ -4,7 +4,7 @@ import { FaSearch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const FormStyle = styled.form`
-  margin: 0rem auto;
+  margin: 0rem auto 2rem auto;
 
   max-width: 50rem;
   position: relative;

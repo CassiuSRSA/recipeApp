@@ -43,11 +43,18 @@ const Searched = () => {
     );
     const recipes = await data.json();
     setSearchRecipes(recipes.results);
+    console.log(recipes.results);
   };
 
   useEffect(() => {
     getSearched(params.search);
   }, [params.search]);
+
+  const recipeExist = searchedRecipes.length === 0 ? false : true;
+
+  if (!recipeExist) {
+    return <h2>No recipes found... Please try another</h2>;
+  }
 
   return (
     <Grid

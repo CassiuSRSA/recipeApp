@@ -84,11 +84,19 @@ const Popular = () => {
       <h3>Popular Picks</h3>
       <Splide
         options={{
-          perPage: 4,
-          arrows: false,
+          perPage: 3,
+          breakpoints: {
+            1500: {
+              perPage: 2,
+            },
+            1000: {
+              perPage: 1,
+            },
+          },
+
           pagination: false,
           drag: "free",
-          gap: "5rem",
+          gap: "1rem",
         }}
       >
         {popular.map((recipe) => {

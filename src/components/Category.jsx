@@ -15,18 +15,26 @@ const SLink = styled(NavLink)`
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  margin-right: 2rem;
   text-decoration: none;
-
-  width: 8rem;
-  height: 8rem;
+  min-width: 7rem;
+  min-height: 7rem;
+  margin: 0 1rem;
   cursor: pointer;
-  transform: scale(0.8);
+
   border: 2px solid #313131;
+
+  @media (max-width: 750px) {
+    min-width: 5rem;
+    min-height: 5rem;
+    margin: 0 0.2rem;
+  }
 
   h4 {
     color: #313131;
     font-size: 1rem;
+    @media (max-width: 750px) {
+      font-size: 0.75rem;
+    }
   }
 
   svg {

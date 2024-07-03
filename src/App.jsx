@@ -10,8 +10,12 @@ const Logo = styled(Link)`
   text-decoration: none;
   font-size: 2rem;
   font-weight: 400;
-  font-family: "Lobster Two", cursive;
+  font-family: "Caveat", cursive;
   padding-left: 0.5rem;
+
+  @media (max-width: 800px) {
+    font-size: 1.75rem;
+  }
 `;
 
 const Nav = styled.nav`
@@ -19,6 +23,10 @@ const Nav = styled.nav`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+  }
   svg {
     font-size: 2.5rem;
   }

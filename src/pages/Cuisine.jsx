@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 const Grid = styled(motion.div)`
   margin-top: 2rem;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
 `;

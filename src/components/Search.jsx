@@ -4,7 +4,9 @@ import { FaSearch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const FormStyle = styled.form`
-  margin: 0rem 20rem;
+  margin: 0rem auto;
+
+  max-width: 50rem;
   position: relative;
 
   input {
@@ -43,7 +45,7 @@ const Search = () => {
         type="text"
         value={input}
         onChange={({ target }) => setInput(target.value)}
-        placeholder="Search for a recipe..."
+        placeholder="Search..."
       />
     </FormStyle>
   );

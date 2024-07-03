@@ -3,9 +3,18 @@ import styled from "styled-components";
 import { useParams } from "react-router-dom";
 
 const DetailWrapper = styled.div`
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   display: flex;
+
+  @media (max-width: 1443px) {
+    flex-direction: column;
+    margin-top: 2rem;
+    img {
+      max-width: 20rem;
+    }
+  }
+
   .active {
     background: linear-gradient(35deg, #494949, #313131);
     color: white;
@@ -32,10 +41,17 @@ const Button = styled.button`
   border: 2px solid black;
   margin-right: 2rem;
   font-weight: 600;
+  @media (max-width: 1443px) {
+    margin-bottom: 1rem;
+  }
 `;
 
 const Info = styled.div`
-  margin-left: 10rem;
+  margin-left: 5rem;
+  @media (max-width: 1443px) {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
 `;
 
 const Recipe = () => {

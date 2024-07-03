@@ -12,10 +12,6 @@ const Logo = styled(Link)`
   font-weight: 400;
   font-family: "Caveat", cursive;
   padding-left: 0.5rem;
-
-  @media (max-width: 800px) {
-    font-size: 1.75rem;
-  }
 `;
 
 const Nav = styled.nav`
